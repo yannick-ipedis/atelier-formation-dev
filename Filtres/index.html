@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Javascript Filter</title>
+</head>
+<body>
+    <ul class="filters">
+        <li><a javascript="#" class="filter" tabindex="0" role="button" data-filter="rouge">ROUGE</a></li>
+        <li><a javascript="#" class="filter" tabindex="0" role="button" data-filter="bleu">BLEU</a></li>
+        <li><a javascript="#" class="filter" tabindex="0" role="button" data-filter="all">TOUS</a></li>
+    </ul>
+
+    <div class="results-text" role="alert" aria-live="polite">
+        <span id="results">5</span> résultats trouvés.
+    </div>
+    
+    <div class="projects">
+      <div class="project rouge" data-filter="rouge">ROUGE 1</div>
+      <div class="project bleu" data-filter="bleu">BLEU 1</div>
+      <div class="project rouge" data-filter="rouge">ROUGE 2</div>
+      <div class="project hide rouge" data-filter="rouge">ROUGE 3</div>
+      <div class="project bleu" data-filter="bleu">BLEU 2</div>
+      <div class="project rouge" data-filter="rouge">ROUGE 4</div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
