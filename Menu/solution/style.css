@@ -1,0 +1,82 @@
+a {
+    text-decoration: none;
+}
+
+nav {
+    font-family: monospace;
+}
+
+ul {
+    background: darkorange;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    color: #fff;
+    background: #686868;
+    display: block;
+    float: left;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+li a {
+    color: #fff;
+    padding: 1rem;
+    display: inline-block;
+    transition-duration: 0.5s;
+}
+
+li:hover, li a:focus {
+    background: #00008B;
+    cursor: pointer;
+}
+
+ul li ul {
+    background: #686868;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    left: 0;
+    display: none;
+}
+
+ul li:hover a{
+    text-decoration: underline;
+}
+
+ul li:hover ul a{
+    text-decoration: none;
+}
+
+ul li ul li:hover a{
+    text-decoration: underline;
+}
+
+ul li a.active{
+    text-decoration: underline;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li a.active + ul,
+ul li a ul.active {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Simple Accordeon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav role="navigation">
+      <ul role="menu">
+        <li><a href="#" role="menuitem">Menu 1</a></li>
+        <li><a href="#" id="submenu" aria-haspopup="true" aria-expanded="false">Menu 2</a>
+          <ul class="dropdown" role="menu">
+            <li><a href="#" role="menuitem">Sous menu 1</a></li>
+            <li><a href="#" role="menuitem">Sous menu 2</a></li>
+            <li><a href="#" role="menuitem">sous menu 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#" role="menuitem">Menu 3</a></li> 
+      </ul>
+    </nav>
+  </header>
+  <script src="script.js"></script>
+</body>
+</html>

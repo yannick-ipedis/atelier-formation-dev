@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formation Accessibilité Vestiaire Collective - Filtres</title>
+</head>
+<body>
+    <header>
+        <h1>Filtres</h1>
+    </header>
+    <main>
+        <ul class="filters">
+            <li><a href="javascript:void(0);" class="filter" data-filter="rouge">ROUGE</a></li>
+            <li><a href="javascript:void(0);" class="filter" data-filter="bleu">BLEU</a></li>
+            <li><a href="javascript:void(0);" class="filter" data-filter="all">TOUS</a></li>
+        </ul>
+        
+        <div class="projects">
+          <div class="project rouge" data-filter="rouge">ROUGE 1</div>
+          <div class="project bleu" data-filter="bleu">BLEU 1</div>
+          <div class="project rouge" data-filter="rouge">ROUGE 2</div>
+          <div class="project hide rouge" data-filter="rouge">ROUGE 3</div>
+          <div class="project bleu" data-filter="bleu">BLEU 2</div>
+          <div class="project rouge" data-filter="rouge">ROUGE 4</div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
