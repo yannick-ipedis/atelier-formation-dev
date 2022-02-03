@@ -76,7 +76,7 @@ body {
   border:none;
   color:white;
 }
-.filter:hover {
+.filter:hover, .filter:focus {
   cursor: pointer;
   background-color: lightcoral;
   color: #000;

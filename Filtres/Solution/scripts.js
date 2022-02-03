@@ -1,7 +1,7 @@
 
 const filters = document.querySelectorAll('.filter');
 const results = document.getElementById('results');
-const text = " résultats trouvés";
+const text = " résultats trouvés ";
 
 filters.forEach(filter => { 
 
@@ -30,13 +30,7 @@ filters.forEach(filter => {
 
     filter.setAttribute('aria-checked',true);
 
-
-    if (!selectedFilter == 'all'){
-      document.getElementById('results').innerHTML = itemsToShow.length + text;
-    }
-    else{
-      document.getElementById('results').innerHTML = itemsToShow.length + text + document.getElementsByClassName("rouge").length + " rouges et " + document.getElementsByClassName("bleu").length + " bleus";
-    }
+    document.getElementById('results').innerHTML = itemsToShow.length + text;
 
   });
 });
